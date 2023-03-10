@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #06050e;
+  }
+
+  /* ----------- Especificações Gerais ----------- */
+
+  a{
+    text-decoration: none;
+    color: #837e9f;
+  }
+  ul {
+    padding: 0 0 0 2em;
+  }
+  ul > li {
+    padding: 0 1em 0 0;
+    font-size: 0.75em;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Merriweather Sans";
+    color: #837e9f;
+  }
+  p {
+    font-weight: normal;
+    font-size: 0.75em;
+    margin: 0;
+    color: #837e9f;
+    font-family: "Merriweather Sans";
+  }
+  li {
+    font-family: "Merriweather Sans";
+    color: #837e9f;
+  }
+  span {
+    text-align: center;
+    padding-bottom: 2em;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 200;
+    font-family: "Merriweather Sans";
+    color: #837e9f;
+    display: block;
+  }
+  .all {
+    padding: 1em 1em 2.6em 1em;
+    display: flex;
+    gap: 1.5em;
+  }
+  
+  /* ----------- container projetos e perfil ----------- */
+  
+  .column-one {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: 25%;
+  }
+  .column-two {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+  }
+
+   /* ----------- perfil ----------- */
+  
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    height: 250px;
+    gap: 1em;
+  }
+  .perfil > img {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 4px solid #065b6b;
+    object-fit: cover;
+  }
+  .perfil:hover{
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #666;
+  }
+  .perfil > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  
+  /* ----------- Dados para contato ----------- */
+
+  .information > p > img {
+    stroke: #837e9f;
+    width: 20px;
+    height: 20px;
+  }
+  .information > p {
+    display: flex;
+    align-items: center;
+    gap: 1.23em;
+    padding: 0 0 0 2em;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    height: 230px;
+    gap: 1em;
+  }
+  .information:hover{
+      position: relative;
+      top:-2px;box-shadow:0 2px 2px #666;
+  }
+  .information p > a:hover{
+    color: #018ca8;
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #000000;
+  }
+
+  /* ----------- Habilidades com as tecnologias ----------- */
+
+  .skills > p {
+    padding: 0 0 0 2.5em;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    place-self: center;
+  }
+  .skills-container > p {
+    padding: 0.37em 0.37em 0.37em 0.37em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #d7d7d7;
+    background-color: #660202;
+    border-radius: 20px;
+    border: 1.5px solid rgb(0, 0, 0);
+    cursor: default;
+  }
+  .skills-container > p:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+  .skills > h1 {
+    padding: 0 0 0 1.5em;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    height: 190px;
+    gap: 1.4em;
+  }
+  .skills:hover{
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #666;
+  }
+
+  /* ----------- Experiências de projetos ----------- */
+
+  .experience > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .experience > h1 {
+    padding: 0 0 0 1.5em;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    height: 210px;
+    gap: 1.4em;
+  }
+  .experience:hover{
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #666;
+  }
+
+  /* ----------- Formação Acadêmica ----------- */
+
+  .education > h1 {
+    padding: 0 0 0 1.5em;
+  }
+  .education > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+  
+    height: 230px;
+    gap: 1.4em;
+  }
+  .education:hover{
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #666;
+  }
+
+  /* ----------- Container dos projetos ----------- */
+
+  .projects-container {
+    background: #302f3d;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 540px;
+    padding: 2.5em;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin-top: 2em;
+    place-self: center;
+  }
+  .projects > a > img {
+    border-radius: 20px;
+    height: 220px;
+    width: 100%;
+    box-shadow: 3px 3px 2px 2px #660202;
+    
+  }
+  .projects > a > img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    transition-property: "background-color";
+    transition-duration: 500ms;
+    position: relative;
+    top:-2px;box-shadow:0 5px 10px #000000;
+  }
+  .projects > a {
+    height: 200px;
+    width: 100%;
+  }
+  
+
+  /* ----------- Botão currículo ----------- */
+
+  .resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resume > a {
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid #7d0000;
+    font-family: "Merriweather Sans";
+    color: #065b6b;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  .resume > a:hover {
+    background-color: #660202;
+    color: #e6e6e6;
+    transition-property: "background-color";
+    transition-duration: 500ms;
+    position: relative;
+    top:-2px;box-shadow:0 2px 2px #666;
+  }
+
+  /* ----------- Responsividade ----------- */
+
+  @media (max-width: 1220px) {
+    .all {
+      gap: 4em;
+    }
+  }
+  @media (max-width: 1024px) {
+    .all {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .column-one {
+      margin-top: 1em;
+      max-width: 380px;
+      width: 100%;
+      height: auto;
+    }
+    .column-two {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+    }
+    .projects {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .projects-container {
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      margin-bottom: 14em;
+    }
+    .resume {
+      margin-bottom: 1.5em;
+      border-radius: 30px;
+      background-color: #cb92b1;
+    }
+    .resume > a {
+      color: #22212c;
+    }
+    .perfil > img {
+      margin-top: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      font-family: "Merriweather Sans";
+      color: #837e9f;
+    }
+  }
+  @media (max-width: 720px) {
+    .all {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .column-one {
+      margin-top: 1em;
+      max-width: 380px;
+      width: 90%;
+      height: auto;
+    }
+    .column-two {
+      width: 80%;
+      max-width: 380px;
+      height: auto;
+    }
+    .projects {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .projects-container {
+      background-color: transparent;
+      box-shadow: none;
+      margin-bottom: 14em;
+    }
+    .resume {
+      margin-bottom: 1.5em;
+      border-radius: 30px;
+      background-color: #cb92b1;
+    }
+    .resume > a {
+      color: #22212c;
+    }
+    .perfil > img {
+      margin-top: 20px;
+    }
+  
+    h1 {
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      font-family: "Merriweather Sans";
+      color: #837e9f;
+    }
+  }
